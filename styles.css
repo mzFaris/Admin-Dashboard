@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p {
+    font-weight: bold;
+}
+
+.header .search .name {
+    font-size: 1.3rem;
+}
+
+.header .profile .name {
+    font-size: 1.5rem;
+}
+
+.header .operation .container {
+    display: flex;
+    gap: 1rem;
+}
+
+.header button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #e8728e;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header input {
+    width: 40rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.sidebar {
+    background-color: #e8728e;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.sidebar div {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar .logo {
+    font-size: 2rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.content {
+    background-color: #e2e8f0;
+    grid-column: 2 / -1;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.content h1 {
+    font-size: 1.5rem;
+}
+
+.content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    color: #757575;
+}
+
+.content .project {
+    grid-row: 1 / 3;
+}
+
+.content .project .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.content .card,
+.announcements > .container,
+.trending > .container {
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.content .card {
+    padding: 2rem 1rem 2rem 2rem;
+    border-left: 0.5rem solid #dcaec2;
+}
+
+.content .announcements h2 {
+    font-size: 1rem;
+}
+.content .announcements p {
+    font-size: 0.9rem;
+}
+
+.announcements > .container,
+.trending > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content .trending .name {
+    color: #000;
+}
